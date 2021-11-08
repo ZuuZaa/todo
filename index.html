@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  
-  <title>Frontend Mentor | Todo app</title>
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-header">
+        <picture>
+          <source
+            srcset="./assets/images/bg-mobile-light.jpg"
+            media="(max-width:375px)"
+          />
+          <source
+            srcset="./assets/images/bg-desktop-light.jpg"
+            media="(min-width:375px; max-width:1440px)"
+          />
+          <img
+            src="./assets/images/bg-desktop-light.jpg"
+            alt="background image"
+          />
+        </picture>
+      </div>
+      <section>
+        <div class="todo-container">
+          <div class="to-to-header">
+            <h1>todo</h1>
+            <div class="icon-wrapper">
+              <img src="./assets/icons/icon-moon.svg" alt="moon-icon" class="icon"/>
+            </div>
+          </div>
 
-</head>
-<body>
+          <form id="todo-form">
+              <input type="checkbox" name="" id="">
+              <input type="text" class="todo-input" />
+          </form>
+          <table></table>
+        
 
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/ZuuZaa/todo">Zumrud Baghirova</a>.
+        </div>
+      </div>
+      </section>
+    </div>
 
-
-  <div class="background-header">
-    <img src="./assets/images/bg-desktop-light.jpg" alt="">
-  </div>
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/ZuuZaa/todo">Zumrud Baghirova</a>.
-  </div>
-
-
-  <script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
